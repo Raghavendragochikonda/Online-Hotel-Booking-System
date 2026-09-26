@@ -13,6 +13,8 @@ public interface UserDAO {
 
     List<User> findAll() throws SQLException;
 
+    User findByEmail(String email) throws SQLException;
+
     boolean update(User user) throws SQLException;
 
     boolean delete(long userId) throws SQLException;
